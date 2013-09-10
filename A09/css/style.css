@@ -1,8 +1,25 @@
 body {
 	background: #0d1424;
 	color: #666
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h4{
+	color: black;
+}
+
+#headerDemo{
+	color: white;
 }
 
 .content {
 	background: #fff;
+}
+
+.flickr_badge_image img {
+	width: 48px;
+	height: 48px;
+	margin-right: 12px;
+	margin-bottom: 12px;
+	float: left;
 }
