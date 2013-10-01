@@ -1,0 +1,4 @@
+
+Hello World!
+&lt;html&gt;HTML works too&lt;/html&gt;
+      cuts out whitespace
