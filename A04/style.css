@@ -28,3 +28,6 @@ td {
 	text-align: center;
 }
 
+.borderless {
+	border: 1px solid white;
+}
