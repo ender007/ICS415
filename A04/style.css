@@ -1,0 +1,29 @@
+table, td, tr, th {
+	border: 1px solid black;
+	border-collapse:collapse;
+}
+
+td {
+	padding: 10px;
+}
+
+#main {
+	width: 100%;
+}
+
+#sidebar {
+	width: 25%;
+}
+
+#navbar {
+	height: 50px;
+}
+
+#footer {
+	height: 50px;
+}
+
+#header {
+	height: 25%;
+	text-align: center;
+}
