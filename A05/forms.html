@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Basic Website</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<header>
+			<h1>Josh's Nice New Website</h1>
+		</header>
+		<nav>
+			<a href="index.html">Home</a>  <a href="#">Forms</a>
+		</nav>
+		<aside>
+			<h3>The New Age</h3>
+			<p>Here is an example of how website design is done today. Webpages are created using html tags and than styled with CSS. It seperates form and style creating a versatile, easy to change website.</p>
+		</aside>
+		<div class="content">
+			<div class="inner-content">
+			<form id="register" action="#">
+<h1>Register for Miss Bakers Space Cadets</h1>
+  <fieldset> 
+    <legend>Personal details</legend> 
+    <div> 
+        <label>First Name
+        <input id="given-name" name="given-name" type="text" placeholder="First name only" required autofocus> 
+		</label>
+    </div>
+    <div> 
+        <label>Last Name
+        <input id="family-name" name="family-name" type="text" placeholder="Last name only" required autofocus> 
+		</label>
+    </div>
+    <div> 
+    	<label>Date of Birth
+        <input id="dob" name="dob" type="date" required>
+		</label>
+    </div> 
+    <div> 
+        <label>Email 
+        <input id="email" name="email" type="email" placeholder="example@domain.com" required>
+		</label> 
+    </div> 
+    <div> 
+        <label>URL 
+        <input id="url" name="url" type="url" placeholder="http://mysite.com">
+		</label> 
+    </div>    
+    <div> 
+        <label>Telephone 
+        <input id="phone" name="phone" type="tel" placeholder="Eg. +447000 000000" required>
+		</label> 
+    </div> 
+	<div>
+		<label>Shoesize
+		<input id="shoes" name="shoes" type="number" min="5" max="18" step="0.5" value="9">
+		</label>
+	</div>
+	<div>
+		<label>Flying Skill level (0 low - 100 high)
+		<input oninput="output.value = skill.value" id="skill" name="skill" type="range" min="0" max="100" value="0">
+		<output name="output" for="skill">0</output>
+		</label>
+	</div>
+	<div>
+		<label>Favorite Color</label>
+		<input name="color" type="color">
+	</div>
+  </fieldset>
+  <fieldset> 
+    <legend>Billing address</legend> 
+    <div> 
+        <label>Address 
+        <textarea id="address" name="address" rows=5 required></textarea>
+		</label> 
+    </div> 
+    <div> 
+        <label>Post code 
+        <input id="postCode" name="postCode" type="text" required>
+		</label> 
+    </div> 
+    <div> 
+        <label>Country 
+        <input id="country" name="country" list="country-names" type="text" required> 
+        <datalist id="country-names"> 
+        	<option label="England" value="England"></option> 
+        	<option label="Northern Ireland" value="Northern Ireland"></option> 
+        	<option label="Ireland" value="Ireland"></option> 
+        	<option label="Scotland" value="Scotland"></option> 
+        	<option label="Wales" value="Wales"></option> 
+        </datalist>
+		</label> 
+    </div> 
+  </fieldset> 
+  <fieldset> 
+    <legend>Card details</legend> 
+    <fieldset> 
+      <legend>Card type</legend> 
+      <div class="card-type"> 
+          <input id="visa" name="cardtype" type="radio"> 
+          <label for="visa">VISA</label> 
+          <input id="mastercard" name="cardtype" type="radio">
+          <label for="mastercard">Mastercard</label> 
+          <input id="amex" name="cardtype" type="radio"> 
+          <label for="amex">AMEX</label>
+      </div> 
+    </fieldset>
+    <div> 
+        <label>Name
+        <input id="cardName" name="cardName" type="text" placeholder="Name as it appears on your card" required>
+		</label>  
+    </div>
+    <div> 
+        <label>Card number 
+        <input id="cardNo" name="cardNo" type="number" required title="The sixteen digit number across the middle of your card."> 
+		</label>
+    </div>
+    <div> 
+        <label>Security code 
+        <input id="security" name="security" type="number" required pattern="[0-9]{3}" title="The last three digits on the back of your card.">
+		</label> 
+    </div>
+    <div> 
+        <label>Expiry Date 
+        <input id="expiry" name="expiry" type="month">
+		</label>
+    </div>
+  </fieldset> 
+  <fieldset> 
+  	<div> 
+	    <button type="submit">Place Order</button> 
+    </div> 
+  </fieldset> 
+</form> 
+		</div>
+	</div>
+		<footer>
+			<p>&#169; Joshua Kulhavy-Sutherland</p>
+		</footer>
+	</body>
+</html>
