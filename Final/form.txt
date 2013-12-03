@@ -1,0 +1,25 @@
+<p>Please fill out this form and hit register!</p>
+<form class="form-inline" autocomplete="on" onsubmit="register.disabled = true;  return true;">
+  <input class="form-control" type="text" id="fname" name="fname" placeholder="First Name" required pattern=".+"><br>
+  <input class="form-control" type="text" id="lname" name="lname" placeholder="Last Name" required pattern=".+"><br>
+  <select class="form-control" name="building" id="building">
+    <option value="Frear Hall">Frear Hall</option>
+    <option value="Gateway">Gateway</option>
+    <option value="Johnson Hall">Johnson Hall</option>
+    <option value="`Ilima/Lehua">`Ilima/Lehua</option>
+    <option value="Mokihana\/Lokelani">Mokihana/Lokelani</option>
+    <option value="Laulima\/Kahawai">Laulima/Kahawai</option>
+    <option value="Wainani">Wainani</option>
+    <option value="Noelani">Noelani</option> 
+    <option value="Anuenue">Anuenue</option>
+    <option value="Off Campus">Off Campus</option>
+  </select><br>
+  <input placeholder="Password" id="pwd1" class="form-control" type="password" required pattern="\w{4,}" name="pwd1" onchange="
+  this.setCustomValidity(this.validity.patternMismatch ? 'Password must contain at least 4 characters' : '');
+  if(this.checkValidity()) form.pwd2.pattern = this.value;
+">
+  <input placeholder="Confirm password" id="pwd2" class="form-control" type="password" required pattern="\w{4,}" name="pwd2" onchange="
+  this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');
+">
+  <input name="register" id="register" class="btn btn-primary btn-lg" value="Register &raquo;" type="submit">
+</form>

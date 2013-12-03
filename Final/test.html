@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<script src="js/jquery.js"></script>
+	</head>
+	<body>
+		<button id="button">Click Me!</button>
+		<p>Results: <span></span></p>
+		<script>
+			$(function(){
+				$("#button").click(function(){
+					//alert("data sent");
+					
+					var dataString = 'name=Josh&building=Frear&pwd1=Hello&pwd2=Hello';  
+  	                //alert(dataString);
+                    $.ajax({  
+                      type: "POST",  
+                      url: "http://localhost/Pool%20League/pool%20leagues/bin/registerUser.php",  
+                      data: dataString,  
+                      success: function(response) {  
+                        alert("success");  
+                        $('span').html(response);
+                      },
+                      error: function(data,status){
+                      	$('span').html(data + status);
+                      }
+                    });
+				});
+			});
+		</script>
+	</body>
+</html>
